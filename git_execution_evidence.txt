@@ -1,0 +1,60 @@
+GITHUB REPOSITORY EXECUTION / VERIFICATION RECORD
+=================================================
+
+Student: Pasumarthi Abhiram
+Roll Number: 2024EB01513
+Subject: Software Development Practice
+College: BITS Hyderabad
+Submission Date: 14-11-2026
+
+PUBLIC REPOSITORY
+https://github.com/abhi-5507/git-workflow-assignment
+
+REPOSITORY VISIBILITY
+Public
+
+BRANCHES VERIFIED
+- main
+- feature
+
+COMMIT HISTORY (newest first; main history includes feature merge)
+
+a4dd381  Revert "Add temporary about page update"                 (main)
+b85b398  Add temporary about page update                          (main)
+9004dee  Merge feature into main                                  (main; 2 parents)
+78673a6  Add gitignore rules                                      (main)
+e30033a  Add feature page                                         (feature)
+a9c290e  Update home page content                                 (main)
+b1e581c  Initial project structure                                (main)
+94ac149  Initial project structure                                (root commit)
+
+MERGE VERIFICATION
+The "Merge feature into main" commit has two parents:
+- 78673a6 (main before merge)
+- e30033a (feature branch head)
+
+UNDO VERIFICATION
+The commit "Add temporary about page update" is followed by
+a new commit titled Revert "Add temporary about page update".
+The revert commit restores the original about.html content without
+deleting the earlier commit from history.
+
+.GITIGNORE CONTENT
+*.log
+temp/
+
+EXPECTED FILES
+- index.html
+- about.html
+- feature.html
+- .gitignore
+- README.md
+- git_commands.txt
+- git_execution_evidence.txt
+
+IMPORTANT PRACTICAL NOTE
+This record reports the state of the public GitHub repository and its commit
+graph. The assignment instructions also ask students to perform the workflow
+on their own local machine. Before submission, clone this public repository
+or reproduce the workflow locally and retain your own terminal screenshots
+if the instructor requests local-machine evidence.
