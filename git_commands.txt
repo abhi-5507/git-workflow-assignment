@@ -1,0 +1,94 @@
+GIT COMMANDS USED / REQUIRED FOR THE ASSIGNMENT
+================================================
+
+Run the commands below from the project folder on your local machine.
+Create or edit the HTML files between the relevant commands.
+
+1. mkdir git-workflow-assignment
+   Creates the project folder on the local machine.
+
+2. cd git-workflow-assignment
+   Changes the terminal's current directory to the project folder.
+
+3. git init -b main
+   Initializes a local Git repository and names the initial branch main.
+
+4. git config user.name "Pasumarthi Abhiram"
+   Sets the author name recorded in commits.
+
+5. git config user.email "YOUR-EMAIL"
+   Sets the author email. Replace YOUR-EMAIL with your own email address.
+
+6. git add index.html about.html
+   Stages the initial HTML files for the first commit.
+
+7. git commit -m "Initial project structure"
+   Records the initial project state in the commit history.
+
+8. git add index.html
+   Stages the modified home page.
+
+9. git commit -m "Update home page content"
+   Records the home-page modification as a separate commit.
+
+10. git switch -c feature
+    Creates and switches to the feature branch.
+
+11. git add feature.html
+    Stages the new feature page.
+
+12. git commit -m "Add feature page"
+    Records feature work on the feature branch.
+
+13. git switch main
+    Switches back to the main branch.
+
+14. git merge feature
+    Merges the feature branch into main.
+
+15. git add .gitignore
+    Stages .gitignore containing:
+      *.log
+      temp/
+
+16. git commit -m "Add gitignore rules"
+    Records the ignore configuration in repository history.
+
+17. git add about.html
+    Stages a small additional change used to demonstrate undo.
+
+18. git commit -m "Add temporary about page update"
+    Creates the commit that will be undone.
+
+19. git revert --no-edit HEAD
+    Creates a new commit reversing the last commit while preserving history.
+
+20. git status
+    Checks the working tree for remaining changes.
+
+21. git log --oneline --graph --decorate --all
+    Displays a compact commit graph with branch and tag labels.
+
+22. git branch -a
+    Lists local and remote-tracking branches.
+
+GITHUB REPOSITORY
+=================
+
+Public repository:
+https://github.com/abhi-5507/git-workflow-assignment
+
+23. git remote add origin https://github.com/abhi-5507/git-workflow-assignment.git
+    Connects the local repository to the public GitHub repository.
+
+24. git remote -v
+    Displays the configured remote repository URLs.
+
+25. git push -u origin main
+    Pushes the main branch to GitHub and sets its upstream tracking branch.
+
+26. git push -u origin feature
+    Pushes the feature branch to GitHub and sets its upstream tracking branch.
+
+27. git status
+    Performs a final check of the repository state.
