@@ -17,27 +17,29 @@ BRANCHES VERIFIED
 - main
 - feature
 
-COMMIT HISTORY (newest first; main history includes feature merge)
+WORKFLOW COMMIT HISTORY (newest workflow action first)
 
-a4dd381  Revert "Add temporary about page update"                 (main)
-b85b398  Add temporary about page update                          (main)
-9004dee  Merge feature into main                                  (main; 2 parents)
-78673a6  Add gitignore rules                                      (main)
-e30033a  Add feature page                                         (feature)
-a9c290e  Update home page content                                 (main)
-b1e581c  Initial project structure                                (main)
+0feeb48  Revert "Add temporary about page update"                 (main)
+c975b2e  Add temporary about page update                          (main)
+c79de43  Merge feature into main                                  (main; two parents)
+3b4c6f2  Add gitignore rules                                      (main)
+209de9e  Add feature page                                         (feature)
+081a675  Update home page content                                 (main)
+7b6c21c  Add about page                                           (main)
 94ac149  Initial project structure                                (root commit)
+
+The repository also includes commits adding the README, Git command
+documentation, and this evidence file.
 
 MERGE VERIFICATION
 The "Merge feature into main" commit has two parents:
-- 78673a6 (main before merge)
-- e30033a (feature branch head)
+- 3b4c6f2 (main before merge)
+- 209de9e (feature branch head)
 
 UNDO VERIFICATION
-The commit "Add temporary about page update" is followed by
-a new commit titled Revert "Add temporary about page update".
-The revert commit restores the original about.html content without
-deleting the earlier commit from history.
+The commit "Add temporary about page update" is followed by a new commit
+titled Revert "Add temporary about page update". The revert commit restores
+the original about.html content without deleting the earlier commit.
 
 .GITIGNORE CONTENT
 *.log
@@ -55,6 +57,6 @@ EXPECTED FILES
 IMPORTANT PRACTICAL NOTE
 This record reports the state of the public GitHub repository and its commit
 graph. The assignment instructions also ask students to perform the workflow
-on their own local machine. Before submission, clone this public repository
-or reproduce the workflow locally and retain your own terminal screenshots
-if the instructor requests local-machine evidence.
+on their own local machine. Clone this public repository or reproduce the
+workflow locally and retain your own terminal screenshots if your instructor
+requests local-machine evidence.
